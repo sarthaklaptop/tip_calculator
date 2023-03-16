@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="header-div">
+      <h1>SPLI</h1>
+      <h1>TTER</h1>
+    </div>
+    <div class="content-div">
+      <div class="content-left">
+        <div class="left-top">
+          <p>Bill</p>
+          <input class="total-input" type="text" value="" name="" id="" placeholder="₹">
+        </div>
+        <div class="left-mid">
+          <p>Select Tip %</p>
+          <div class="btns">
+            <button class="per" value="5" onclick="five()" id="p5per">5%</button>
+            <button class="per" value="10" onclick="ten()" id="p10per">10%</button>
+            <button class="per" value="15" onclick="fifteen()" id="p15per">15%</button>
+            <button class="per" value="25" onclick="twentify()" id="p25per">25%</button>
+            <button class="per" value="50" onclick="fifty()" id="p50per">50%</button>
+            <button class="custom">Custom</button>
+          </div>
+        </div>
+        <div class="left-bottom">
+          <p>Number of People</p>
+          <input  type="text" value="" name="" id="people" >
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="right-main">
+          <div class="tip-amount">
+            <div class="tip-amount-left">
+              <p>Tip Amount</p>
+              <p>/ person</p>
+            </div>
+            <div class="tip-amount-right">
+              <p id="tip-amount"></p>
+            </div>
+          </div>
+          <div class="total-amount">
+            <div class="total-amount-left">
+              <p>Total</p>
+              <p>/ person</p>
+            </div>
+            <div class="total-amount-right">
+              <p id="total-amount"></p>
+            </div>
+          </div>
+        </div>
+        <button onclick="resetValues()" class="reset-btn">RESET</button>
+        <!-- <button type="reset" class="reset-btn">RESET</button> -->
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
